@@ -1,0 +1,33 @@
+.container {
+  width: 98vw;
+  height: 98vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto) 30px;
+  grid-template-areas:
+    "header header header"
+    ". centerPage ."
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.centerPage {
+  grid-area: centerPage;
+  height: 100%;
+  margin: auto;
+}
+
+.footer {
+  grid-area: footer;
+  margin: 0;
+  * {
+    p {
+      margin: 0;
+    }
+  }
+}
